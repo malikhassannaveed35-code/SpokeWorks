@@ -1,24 +1,59 @@
-# Spokeworks - 5-page website (HTML5 + Tailwind CSS)
+# SpokeWorks - 5-Page Website
 
-Pages: index.html, about.html, contact.html, signin.html, signup.html
+A responsive five-page educational website developed using HTML5 and Tailwind CSS.
 
-## Run locally
-Open `index.html` in a browser (needs internet for the Tailwind CDN and Google Fonts), or use the VS Code Live Server extension.
+## Pages
 
-## Contact form (required setup)
-1. Create a free form at https://formspree.io
-2. Copy your form ID (e.g. `xyzabcde`)
-3. In `contact.html`, replace `YOUR_FORM_ID` in the form `action` URL.
+- Home
+- About
+- Contact
+- Sign In
+- Sign Up
 
-## Deploy
-Push to GitHub, then enable GitHub Pages (Settings > Pages > main branch / root), or drag the folder onto Netlify.
+## Technologies Used
 
-## Structure
-```
-spokeworks/
-  index.html  about.html  contact.html  signin.html  signup.html
-  assets/
-    css/custom.css
-    img/favicon.svg  hero-bike.svg
-  README.md
-```
+- HTML5
+- Tailwind CSS
+- Google Fonts
+- Formspree
+
+## Run Locally
+
+Open `index.html` in a web browser.
+
+The website uses Tailwind CSS CDN and Google Fonts, so an internet connection is required.
+
+You can also run the project using the VS Code Live Server extension.
+
+## Contact Form
+
+The Contact page uses Formspree for form handling.
+
+When a user submits the Contact form, the submitted information is processed through Formspree.
+
+## Deployment
+
+The website can be deployed using GitHub Pages.
+
+GitHub Pages configuration:
+
+- Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/ (root)`
+
+## Project Structure
+
+```text
+SpokeWorks/
+├── index.html
+├── about.html
+├── contact.html
+├── signin.html
+├── signup.html
+├── assets/
+│   ├── css/
+│   │   └── custom.css
+│   └── img/
+│       ├── favicon.svg
+│       └── hero-bike.svg
+└── README.md
