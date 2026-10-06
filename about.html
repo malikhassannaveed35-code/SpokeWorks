@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Spokeworks</title>
+  <meta name="description" content="Learn the story, values and team behind Spokeworks, a community bike workshop.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { ink:'#0F1F33', sun:'#F5C518', mist:'#F2F5F8', steel:'#56677A', teal:'#17877B' },
+      fontFamily: { display:['"Bricolage Grotesque"','sans-serif'], sans:['"Source Sans 3"','sans-serif'] } } } }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <input id="nav-toggle" type="checkbox" class="peer hidden" aria-label="Toggle menu">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex items-center gap-2 font-display text-xl font-extrabold text-ink">
+      <img src="assets/img/favicon.svg" alt="" class="h-8 w-8"> Spokeworks
+    </a>
+    <label for="nav-toggle" class="cursor-pointer rounded-md p-2 text-ink hover:bg-mist md:hidden" aria-label="Open menu">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </label>
+    <nav class="hidden items-center gap-7 md:flex" aria-label="Main"><a href="index.html" class="block py-2 md:py-1 text-steel hover:text-ink">Home</a><a href="about.html" class="block py-2 md:py-1 text-ink font-semibold md:border-b-2 md:border-sun" aria-current="page">About</a><a href="contact.html" class="block py-2 md:py-1 text-steel hover:text-ink">Contact</a><a href="signin.html" class="block py-2 md:py-1 text-steel hover:text-ink">Sign In</a>
+      <a href="signup.html" class="rounded-lg bg-ink px-4 py-2 text-sm font-semibold text-white hover:bg-teal focus:outline-none focus-visible:ring-2 focus-visible:ring-sun">Sign Up</a>
+    </nav>
+  </div>
+  <nav class="hidden border-t border-slate-200 px-4 pb-4 peer-checked:block md:!hidden" aria-label="Mobile"><a href="index.html" class="block py-2 md:py-1 text-steel hover:text-ink">Home</a><a href="about.html" class="block py-2 md:py-1 text-ink font-semibold md:border-b-2 md:border-sun" aria-current="page">About</a><a href="contact.html" class="block py-2 md:py-1 text-steel hover:text-ink">Contact</a><a href="signin.html" class="block py-2 md:py-1 text-steel hover:text-ink">Sign In</a>
+    <a href="signup.html" class="mt-2 block rounded-lg bg-ink px-4 py-2 text-center font-semibold text-white">Sign Up</a>
+  </nav>
+</header>
+<main>
+
+<section class="bg-mist"><div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+  <nav aria-label="Breadcrumb" class="text-sm text-steel"><a href="index.html" class="hover:text-ink">Home</a> <span class="mx-1">/</span> <span class="font-semibold text-ink">About</span></nav>
+  <h1 class="mt-4 font-display text-4xl font-extrabold sm:text-5xl">Born in a garage, built by riders</h1>
+  <p class="mt-4 max-w-2xl text-lg text-steel">We started Spokeworks because good bike repair should be fair, fast and easy to understand.</p></div></section>
+<section class="mx-auto mt-16 grid max-w-6xl items-start gap-12 px-4 sm:px-6 md:grid-cols-2">
+  <div><h2 class="font-display text-3xl font-extrabold">Our story</h2><p class="mt-4 text-steel">Bilal began repairing friends' bikes in 2019. Word spread, the garage filled up, and the neighbourhood asked for a real workshop.</p><p class="mt-4 text-steel">Today a team of four mechanics and instructors serves students, commuters and weekend riders, with the same promise: tell you the price first and explain the fix.</p>
+  <div class="mt-6 flex flex-wrap gap-2"><span class="rounded-full bg-sun/30 px-3 py-1 text-sm font-semibold">Est. 2019</span><span class="rounded-full bg-teal/10 px-3 py-1 text-sm font-semibold text-teal">Community owned</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-semibold">4 team members</span></div></div>
+  <ol class="space-y-8 border-l-2 border-slate-200 pl-2"><li class="relative pl-8"><span class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-sun ring-4 ring-white"></span><p class="font-display font-bold">2019</p><p class="text-steel">Bilal fixes bikes from a garage for neighbours and classmates.</p></li><li class="relative pl-8"><span class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-sun ring-4 ring-white"></span><p class="font-display font-bold">2021</p><p class="text-steel">Moves into a proper workshop and starts Saturday classes.</p></li><li class="relative pl-8"><span class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-sun ring-4 ring-white"></span><p class="font-display font-bold">2023</p><p class="text-steel">Launches e-bike rentals with 40 bikes.</p></li><li class="relative pl-8"><span class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-sun ring-4 ring-white"></span><p class="font-display font-bold">2026</p><p class="text-steel">Opens the Canal Road flagship with 350 rental bikes.</p></li></ol></section>
+<section class="mx-auto mt-24 max-w-6xl px-4 sm:px-6"><h2 class="font-display text-3xl font-extrabold">What we stand for</h2><div class="mt-8 grid gap-6 md:grid-cols-3"><article class="rounded-2xl border border-slate-200 p-6"><div class="text-teal"><svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/></svg></div><h3 class="mt-4 font-display text-xl font-bold">Honest work</h3><p class="mt-2 text-steel">We only fix what needs fixing and show you the old part.</p></article><article class="rounded-2xl border border-slate-200 p-6"><div class="text-teal"><svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19c0-9 5-14 15-14 0 10-5 15-14 15m-1-1c2-4 5-7 9-9"/></svg></div><h3 class="mt-4 font-display text-xl font-bold">Less waste</h3><p class="mt-2 text-steel">Repair first, replace last. We recycle every tube and tyre.</p></article><article class="rounded-2xl border border-slate-200 p-6"><div class="text-teal"><svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.4 15.2 6 20.6a2 2 0 0 1-2.8-2.8l5.4-5.4m2.8 2.8a5 5 0 0 0 6.6-6.6l-3 3-2.4-.6-.6-2.4 3-3a5 5 0 0 0-6.6 6.6m2.8 2.8-2.8-2.8"/></svg></div><h3 class="mt-4 font-display text-xl font-bold">Shared skills</h3><p class="mt-2 text-steel">Every customer is welcome to watch, ask and learn.</p></article></div></section>
+<section class="mx-auto mt-24 grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2"><div><h2 class="font-display text-3xl font-extrabold">Our impact in 2025</h2><p class="mt-2 text-steel">Numbers we track every month.</p><div class="mt-8 space-y-6"><div><div class="flex justify-between text-sm font-semibold"><span>Repairs finished within 48 hours</span><span>92%</span></div><div class="mt-2 h-2.5 rounded-full bg-slate-200"><div class="h-2.5 rounded-full bg-teal" style="width:92%"></div></div></div><div><div class="flex justify-between text-sm font-semibold"><span>Parts reused or recycled</span><span>85%</span></div><div class="mt-2 h-2.5 rounded-full bg-slate-200"><div class="h-2.5 rounded-full bg-teal" style="width:85%"></div></div></div><div><div class="flex justify-between text-sm font-semibold"><span>Customers who return</span><span>78%</span></div><div class="mt-2 h-2.5 rounded-full bg-slate-200"><div class="h-2.5 rounded-full bg-teal" style="width:78%"></div></div></div></div></div>
+  <div class="rounded-2xl bg-ink p-8 text-white"><p class="font-display text-2xl font-bold leading-snug">“A repaired bike is a bike that stays out of landfill and on the road.”</p><p class="mt-4 text-slate-300">Maria Qureshi, rentals manager</p>
+  <div class="mt-8 flex items-start gap-3 rounded-lg bg-white/10 p-4 text-sm"><svg class="h-5 w-5 shrink-0 text-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8h.01M11 12h1v5h1m8-5a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><p>Every rental includes a free safety check before you ride.</p></div></div></section>
+<section class="mx-auto mt-24 max-w-6xl px-4 sm:px-6"><h2 class="font-display text-3xl font-extrabold">Meet the team</h2><div class="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4"><article class="rounded-2xl bg-mist p-6 text-center"><div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-ink font-display text-2xl font-extrabold text-sun">B</div><h3 class="mt-4 font-display font-bold">Bilal Ahmed</h3><p class="text-sm text-steel">Head mechanic</p></article><article class="rounded-2xl bg-mist p-6 text-center"><div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-ink font-display text-2xl font-extrabold text-sun">M</div><h3 class="mt-4 font-display font-bold">Maria Qureshi</h3><p class="text-sm text-steel">Rentals manager</p></article><article class="rounded-2xl bg-mist p-6 text-center"><div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-ink font-display text-2xl font-extrabold text-sun">U</div><h3 class="mt-4 font-display font-bold">Usman Tariq</h3><p class="text-sm text-steel">Wheel builder</p></article><article class="rounded-2xl bg-mist p-6 text-center"><div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-ink font-display text-2xl font-extrabold text-sun">H</div><h3 class="mt-4 font-display font-bold">Hina Sheikh</h3><p class="text-sm text-steel">Class instructor</p></article></div></section>
+<section class="mx-auto mt-24 max-w-3xl px-4 sm:px-6"><h2 class="font-display text-3xl font-extrabold">Good to know</h2><div class="mt-8"><div class="divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white"><details class="group p-5"><summary class="flex cursor-pointer list-none items-center justify-between font-display font-bold">Do you only work on city bikes?<span class="ml-4 text-2xl text-teal transition group-open:rotate-45">+</span></summary><p class="mt-3 text-steel">No. We service road, mountain, folding and electric bikes.</p></details><details class="group p-5"><summary class="flex cursor-pointer list-none items-center justify-between font-display font-bold">Can I volunteer?<span class="ml-4 text-2xl text-teal transition group-open:rotate-45">+</span></summary><p class="mt-3 text-steel">Yes. Contact us about weekend volunteering and learn while you help.</p></details></div></div></section>
+<section class="mx-auto mt-24 max-w-6xl px-4 sm:px-6"><div class="flex flex-col items-start justify-between gap-6 rounded-2xl bg-ink p-8 text-white sm:p-12 md:flex-row md:items-center">
+  <div><h2 class="font-display text-3xl font-extrabold">Come say hello</h2><p class="mt-2 max-w-xl text-slate-300">Visit the workshop, meet the team and see where your bike will be fixed.</p></div>
+  <a href="contact.html" class="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ink bg-sun text-ink hover:bg-yellow-300 shrink-0">Contact us</a></div></section>
+
+</main>
+<footer class="mt-24 bg-ink text-slate-300">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
+    <div class="md:col-span-1">
+      <a href="index.html" class="flex items-center gap-2 font-display text-xl font-extrabold text-white"><img src="assets/img/favicon.svg" alt="" class="h-8 w-8"> Spokeworks</a>
+      <p class="mt-4 text-sm leading-relaxed">A community bike workshop for repairs, rentals and riders of every level.</p>
+    </div>
+    <div><h2 class="font-display font-bold text-white">Pages</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="hover:text-sun" href="index.html">Home</a></li><li><a class="hover:text-sun" href="about.html">About</a></li>
+        <li><a class="hover:text-sun" href="contact.html">Contact</a></li><li><a class="hover:text-sun" href="signin.html">Sign In</a></li><li><a class="hover:text-sun" href="signup.html">Sign Up</a></li>
+      </ul></div>
+    <div><h2 class="font-display font-bold text-white">Opening hours</h2>
+      <ul class="mt-4 space-y-2 text-sm"><li>Mon–Fri: 8:00 – 18:00</li><li>Saturday: 9:00 – 16:00</li><li>Sunday: closed</li></ul></div>
+    <div><h2 class="font-display font-bold text-white">Get in touch</h2>
+      <ul class="mt-4 space-y-2 text-sm"><li>12 Canal Road, Lahore</li><li>hello@spokeworks.example</li><li>+92 300 000 0000</li></ul></div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">© 2026 Spokeworks. Built for a university web development assignment.</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Spokeworks</title>
+  <meta name="description" content="Contact Spokeworks to book a repair, rent a bike or ask a question.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { ink:'#0F1F33', sun:'#F5C518', mist:'#F2F5F8', steel:'#56677A', teal:'#17877B' },
+      fontFamily: { display:['"Bricolage Grotesque"','sans-serif'], sans:['"Source Sans 3"','sans-serif'] } } } }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <input id="nav-toggle" type="checkbox" class="peer hidden" aria-label="Toggle menu">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex items-center gap-2 font-display text-xl font-extrabold text-ink">
+      <img src="assets/img/favicon.svg" alt="" class="h-8 w-8"> Spokeworks
+    </a>
+    <label for="nav-toggle" class="cursor-pointer rounded-md p-2 text-ink hover:bg-mist md:hidden" aria-label="Open menu">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </label>
+    <nav class="hidden items-center gap-7 md:flex" aria-label="Main"><a href="index.html" class="block py-2 md:py-1 text-steel hover:text-ink">Home</a><a href="about.html" class="block py-2 md:py-1 text-steel hover:text-ink">About</a><a href="contact.html" class="block py-2 md:py-1 text-ink font-semibold md:border-b-2 md:border-sun" aria-current="page">Contact</a><a href="signin.html" class="block py-2 md:py-1 text-steel hover:text-ink">Sign In</a>
+      <a href="signup.html" class="rounded-lg bg-ink px-4 py-2 text-sm font-semibold text-white hover:bg-teal focus:outline-none focus-visible:ring-2 focus-visible:ring-sun">Sign Up</a>
+    </nav>
+  </div>
+  <nav class="hidden border-t border-slate-200 px-4 pb-4 peer-checked:block md:!hidden" aria-label="Mobile"><a href="index.html" class="block py-2 md:py-1 text-steel hover:text-ink">Home</a><a href="about.html" class="block py-2 md:py-1 text-steel hover:text-ink">About</a><a href="contact.html" class="block py-2 md:py-1 text-ink font-semibold md:border-b-2 md:border-sun" aria-current="page">Contact</a><a href="signin.html" class="block py-2 md:py-1 text-steel hover:text-ink">Sign In</a>
+    <a href="signup.html" class="mt-2 block rounded-lg bg-ink px-4 py-2 text-center font-semibold text-white">Sign Up</a>
+  </nav>
+</header>
+<main>
+
+<section class="bg-mist"><div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+  <nav aria-label="Breadcrumb" class="text-sm text-steel"><a href="index.html" class="hover:text-ink">Home</a> <span class="mx-1">/</span> <span class="font-semibold text-ink">Contact</span></nav>
+  <h1 class="mt-4 font-display text-4xl font-extrabold sm:text-5xl">Tell us what your bike needs</h1>
+  <p class="mt-4 max-w-2xl text-lg text-steel">Send a message and we will reply within one working day.</p></div></section>
+<section class="mx-auto mt-16 grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5">
+  <div class="lg:col-span-3">
+    <div class="mb-6 flex items-start gap-3 rounded-lg border border-sun bg-sun/20 p-4 text-sm"><svg class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8h.01M11 12h1v5h1m8-5a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><p>Fields marked with * are required. Your message goes straight to the workshop inbox.</p></div>
+    <form action="https://formspree.io/f/xrpeznbp" method="POST" class="space-y-5 rounded-2xl border border-slate-200 p-6 sm:p-8">
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div><label for="name" class="block text-sm font-semibold text-ink">Full name *</label><input id="name" name="name" type="text" required autocomplete="name" placeholder="Ayesha Khan" class="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-ink placeholder-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30"></div>
+        <div><label for="email" class="block text-sm font-semibold text-ink">Email *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" class="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-ink placeholder-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30"></div>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div><label for="phone" class="block text-sm font-semibold text-ink">Phone</label><input id="phone" name="phone" type="tel" placeholder="+92 300 0000000" class="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-ink placeholder-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30"></div>
+        <div><label for="topic" class="block text-sm font-semibold text-ink">Topic *</label><select id="topic" name="topic" required class="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-ink placeholder-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30"><option value="">Choose a topic</option><option>Repair quote</option><option>Bike rental</option><option>Maintenance class</option><option>Something else</option></select></div>
+      </div>
+      <div><label for="message" class="block text-sm font-semibold text-ink">Message *</label><textarea id="message" name="message" rows="5" required placeholder="Describe your bike and the problem." class="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-ink placeholder-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30"></textarea></div>
+      <label class="flex items-center gap-2 text-sm text-steel"><input type="checkbox" name="updates" value="yes" class="h-4 w-4 rounded border-slate-300 text-teal focus:ring-teal"> Send me workshop news (one email a month)</label>
+      <input type="hidden" name="_subject" value="New message from the Spokeworks website">
+      <button type="submit" class="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ink bg-sun text-ink hover:bg-yellow-300 w-full sm:w-auto">Send message</button>
+    </form>
+  </div>
+  <aside class="space-y-6 lg:col-span-2">
+    <ul class="space-y-4"><li class="flex gap-4 rounded-xl border border-slate-200 p-5"><div class="text-teal"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div><div><h3 class="font-display font-bold">Visit us</h3><p class="text-steel">12 Canal Road, Lahore, Punjab</p></div></li><li class="flex gap-4 rounded-xl border border-slate-200 p-5"><div class="text-teal"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2.3l1.7 4-2 1.4a11 11 0 0 0 5.6 5.6l1.4-2 4 1.7V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5Z"/></svg></div><div><h3 class="font-display font-bold">Call</h3><p class="text-steel">+92 300 000 0000</p></div></li><li class="flex gap-4 rounded-xl border border-slate-200 p-5"><div class="text-teal"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Zm0 0 9 6 9-6"/></svg></div><div><h3 class="font-display font-bold">Email</h3><p class="text-steel">hello@spokeworks.example</p></div></li></ul>
+    <div class="rounded-2xl bg-mist p-6"><h2 class="font-display text-lg font-bold">Opening hours</h2><table class="mt-3 w-full text-sm"><tbody><tr class="border-t border-slate-200"><td class="py-2.5 font-semibold">Monday – Friday</td><td class="py-2.5 text-right text-steel">8:00 – 18:00</td></tr><tr class="border-t border-slate-200"><td class="py-2.5 font-semibold">Saturday</td><td class="py-2.5 text-right text-steel">9:00 – 16:00</td></tr><tr class="border-t border-slate-200"><td class="py-2.5 font-semibold">Sunday</td><td class="py-2.5 text-right text-steel">Closed</td></tr></tbody></table></div>
+    <div class="flex items-center gap-3"><span class="text-sm font-semibold">Follow us</span>
+      <a href="#" class="rounded-full bg-ink px-3 py-1.5 text-sm text-white hover:bg-teal">Instagram</a><a href="#" class="rounded-full bg-ink px-3 py-1.5 text-sm text-white hover:bg-teal">Facebook</a></div>
+  </aside>
+</section>
+<section class="mx-auto mt-20 max-w-6xl px-4 sm:px-6"><div class="flex h-64 flex-col items-center justify-center rounded-2xl bg-ink text-center text-white"><svg class="h-10 w-10 text-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg><p class="mt-3 font-display text-xl font-bold">12 Canal Road, Lahore</p><p class="text-slate-300">Ten minutes from the main bus stop</p>
+  <a href="https://www.openstreetmap.org/search?query=Canal%20Road%20Lahore" target="_blank" rel="noopener" class="mt-4 rounded-lg bg-sun px-4 py-2 text-sm font-semibold text-ink hover:bg-yellow-300">Open map</a></div></section>
+<section class="mx-auto mt-20 max-w-3xl px-4 sm:px-6"><h2 class="font-display text-3xl font-extrabold">Before you write</h2><div class="mt-8"><div class="divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white"><details class="group p-5"><summary class="flex cursor-pointer list-none items-center justify-between font-display font-bold">Can I get a price without visiting?<span class="ml-4 text-2xl text-teal transition group-open:rotate-45">+</span></summary><p class="mt-3 text-steel">Yes. Send photos and a short description and we will quote by email.</p></details><details class="group p-5"><summary class="flex cursor-pointer list-none items-center justify-between font-display font-bold">Do you collect bikes?<span class="ml-4 text-2xl text-teal transition group-open:rotate-45">+</span></summary><p class="mt-3 text-steel">Pickup is available within 5 km for a small fee.</p></details></div></div></section>
+
+</main>
+<footer class="mt-24 bg-ink text-slate-300">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
+    <div class="md:col-span-1">
+      <a href="index.html" class="flex items-center gap-2 font-display text-xl font-extrabold text-white"><img src="assets/img/favicon.svg" alt="" class="h-8 w-8"> Spokeworks</a>
+      <p class="mt-4 text-sm leading-relaxed">A community bike workshop for repairs, rentals and riders of every level.</p>
+    </div>
+    <div><h2 class="font-display font-bold text-white">Pages</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="hover:text-sun" href="index.html">Home</a></li><li><a class="hover:text-sun" href="about.html">About</a></li>
+        <li><a class="hover:text-sun" href="contact.html">Contact</a></li><li><a class="hover:text-sun" href="signin.html">Sign In</a></li><li><a class="hover:text-sun" href="signup.html">Sign Up</a></li>
+      </ul></div>
+    <div><h2 class="font-display font-bold text-white">Opening hours</h2>
+      <ul class="mt-4 space-y-2 text-sm"><li>Mon–Fri: 8:00 – 18:00</li><li>Saturday: 9:00 – 16:00</li><li>Sunday: closed</li></ul></div>
+    <div><h2 class="font-display font-bold text-white">Get in touch</h2>
+      <ul class="mt-4 space-y-2 text-sm"><li>12 Canal Road, Lahore</li><li>hello@spokeworks.example</li><li>+92 300 000 0000</li></ul></div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">© 2026 Spokeworks. Built for a university web development assignment.</div>
+</footer>
+</body>
+</html>

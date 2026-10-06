@@ -1,0 +1,4 @@
+/* Small additions on top of Tailwind */
+summary::-webkit-details-marker { display: none; }
+:focus-visible { outline: 2px solid #17877B; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
